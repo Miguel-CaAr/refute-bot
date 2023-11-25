@@ -11,6 +11,7 @@ export function SendMessage() {
     user.className = "you-message"
     user.innerHTML = `Tu: ${input.value}`;
     container.appendChild(user);
+    container.scrollTop = container.scrollHeight; //Mantiene el la barra de scroll desplazada hacia abajo
 
     Thread(input.value);
     input.value = "Waiting answer";

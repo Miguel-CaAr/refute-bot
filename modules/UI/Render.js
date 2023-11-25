@@ -4,6 +4,7 @@ export function Render(response) {
   renderResponse.innerHTML = `RefuteBot: ${response}`;
   const container = document.querySelector(".container-response");
   container.appendChild(renderResponse);
+  container.scrollTop = container.scrollHeight;
 
   const btnSend = document.querySelector(".button");
   btnSend.disabled = false;

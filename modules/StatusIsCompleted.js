@@ -8,7 +8,7 @@ export async function StatusIsCompleted(threadID, runID) {
     if (status.status === "completed") {
       Response(threadID);
     } else if (status.status === "failed") {
-      alert('Server error: ', status.last_error.message);
+      alert(`Server error: ${status.last_error.message}`);
       window.location.reload();
     }
   }

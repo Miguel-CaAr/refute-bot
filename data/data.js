@@ -1,4 +1,4 @@
-const apiKey = "API-KEY";
+const apiKey = "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";
 const headers = {
   Authorization: `Bearer ${apiKey}`,
   "Content-Type": "application/json",
