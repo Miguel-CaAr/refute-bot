@@ -5,8 +5,11 @@ export function Render(response) {
   const container = document.querySelector(".container-response");
   container.appendChild(renderResponse);
 
-  const btnSend = (document.querySelector(".button").disabled = false);
+  const btnSend = document.querySelector(".button");
+  btnSend.disabled = false;
   btnSend.classList.remove("btn-disabled");
-  const input = (document.querySelector(".input").disabled = false);
-  input.innerHTML = "Message";
+  const input = document.querySelector(".input");
+  input.disabled = false;
+  input.value = '';
+  input.placeholder = "Message";
 }
